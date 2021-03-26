@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:elevation="6dp"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/restaurantImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/placeholder_image" />
+
+        <TextView
+            android:id="@+id/restaurantName"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurantImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginLeft="8dp"
+            android:text="This is over Restautant name of the post" />
+
+        <TextView
+            android:id="@+id/restaurantDiscription"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurantName"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_marginLeft="8dp"
+            android:text="Restaurant description ......" />
+
+        <ImageButton
+            android:layout_marginRight="8dp"
+            android:id="@+id/Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
